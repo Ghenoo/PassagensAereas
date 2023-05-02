@@ -18,8 +18,8 @@ public class Bilhete {
         System.out.println("Destinos disponíveis no momento");
         destinos[0] = "1 - São Paulo";
         destinos[1] = "2 - Fortaleza";
-        destinos[2] = "3 - Piaui";
-        destinos[3] = "4 - Pernambuco";
+        destinos[2] = "3 - Curitiba";
+        destinos[3] = "4 - Gramado";
         destinos[4] = "5 - Salvador";
         destinos[5] = "6 - Bahia\n\n";
         for(String pontos: destinos){
@@ -122,8 +122,8 @@ public class Bilhete {
         System.out.println("Destinos disponíveis no momento");
         destinos[0] = "1 - São Paulo";
         destinos[1] = "2 - Fortaleza";
-        destinos[2] = "3 - Piaui";
-        destinos[3] = "4 - Pernambuco";
+        destinos[2] = "3 - Curitiba";
+        destinos[3] = "4 - Gramado";
         destinos[4] = "5 - Salvador";
         destinos[5] = "6 - Bahia\n\n";
         for(String pontos: destinos){
@@ -145,12 +145,12 @@ public class Bilhete {
                 formaPagamentoFort();
                 break;
             case 3:
-                System.out.println("\nDestino: Piaui foi selecionado");
+                System.out.println("\nDestino: Curitiba foi selecionado");
                 System.out.println("Custo: R$560");
                 formaPagamentoPiaui();
                 break;
             case 4:
-                System.out.println("\nDestino: Pernambuco foi selecionado");
+                System.out.println("\nDestino: Gramado foi selecionado");
                 System.out.println("Custo: R$400");
                 formaPagamentoPE();
                 break;
