@@ -1,6 +1,6 @@
 package br.passagensaereas.fag;
-import java.util.Scanner;
 
+import java.util.Scanner;
 public class Bilhete {
     public static String[]destinos = new String[100];
     public static double[]custos = new double[100];
@@ -147,12 +147,12 @@ public class Bilhete {
             case 3:
                 System.out.println("\nDestino: Curitiba foi selecionado");
                 System.out.println("Custo: R$560");
-                formaPagamentoPiaui();
+                formaPagamentoCTB();
                 break;
             case 4:
                 System.out.println("\nDestino: Gramado foi selecionado");
                 System.out.println("Custo: R$400");
-                formaPagamentoPE();
+                formaPagamentoGRA();
                 break;
             case 5:
                 System.out.println("\nDestino: Salvador foi selecionado");
@@ -391,11 +391,12 @@ public class Bilhete {
                 confirmar();
                 break;
             case 6:
-                System.out.println("Poltrona selecionada: [ 6]");
+                System.out.println("Poltrona selecionada: [6]");
                 confirmar();
                 break;
         }
     }
+
 
     public static void confirmar() {
         Scanner sc = new Scanner(System.in);
@@ -487,7 +488,7 @@ public class Bilhete {
 
     }
 
-    public static void formaPagamentoPiaui(){
+    public static void formaPagamentoCTB(){
 
         Scanner scan20 = new Scanner(System.in);
         double valueSP = 560;
@@ -521,7 +522,7 @@ public class Bilhete {
 
     }
 
-    public static void formaPagamentoPE(){
+    public static void formaPagamentoGRA(){
 
         Scanner scan20 = new Scanner(System.in);
         double valueSP = 400;
