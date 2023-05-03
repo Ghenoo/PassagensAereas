@@ -126,11 +126,6 @@ public class Bilhete {
         destinos[3] = "4 - Gramado";
         destinos[4] = "5 - Salvador";
         destinos[5] = "6 - Bahia\n\n";
-        for(String pontos: destinos){
-            if(pontos != null){
-                System.out.println(pontos);
-            }
-        }
 
         nome = scan1.nextInt();
         switch(nome){
@@ -397,6 +392,33 @@ public class Bilhete {
         }
     }
 
+    public class Bagagem {
+        private double peso;
+
+        public Bagagem() {
+        }
+
+        public void setPeso(double peso) {
+            this.peso = peso;
+        }
+
+        public double getPeso() {
+            return peso;
+        }
+
+        public void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+
+            Bagagem bagagem = new Bagagem();
+
+            System.out.print("Insira o peso da bagagem: ");
+            double peso = scanner.nextDouble();
+
+            bagagem.setPeso(peso);
+
+            System.out.println("Peso da bagagem: " + bagagem.getPeso());
+        }
+    }
 
     public static void confirmar() {
         Scanner sc = new Scanner(System.in);

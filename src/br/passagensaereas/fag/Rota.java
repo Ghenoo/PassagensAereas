@@ -1,6 +1,6 @@
 package br.passagensaereas.fag;
 
-public class Planejar {
+public class Rota {
     private String destino;
     private int dataI;
     private int dataIV;
@@ -8,14 +8,14 @@ public class Planejar {
 
 
 
-    public Planejar(String destino, int dataI, int dataIV, int horario) {
+    public Rota(String destino, int dataI, int dataIV, int horario) {
         this.destino = destino;
         this.dataI = dataI;
         this.dataIV = dataIV;
         this.horario = horario;
     }
 
-    public Planejar() {
+    public Rota() {
     }
 
     public String getDestino() {

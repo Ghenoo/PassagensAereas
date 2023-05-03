@@ -7,17 +7,13 @@ public class Endereco extends Pessoa {
         return rua;
     }
 
-    public void setNome(String rua) {
-        this.rua = rua;
-    }
+    public void setNome(String rua) { this.rua = rua; }
 
     public String getBairro() {
         return bairro;
     }
 
-    public void setEmail(String cidade) {
-        this.cidade = cidade;
-    }
+    public void setEmail(String cidade) { this.cidade = cidade; }
 
     public String getEstado() {
         return estado;
@@ -31,7 +27,5 @@ public class Endereco extends Pessoa {
         return pais;
     }
 
-    public void setPais(String pais) {
-        this.pais = pais;
-    }
+    public void setPais(String pais) { this.pais = pais; }
 }
