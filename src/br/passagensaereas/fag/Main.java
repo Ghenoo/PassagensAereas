@@ -32,6 +32,8 @@ public class Main {
         String rua = null;
         String pais = null;
         String estado = null;
+        String cidade = null;
+        String CEP = null;
         if (resposta.equalsIgnoreCase("S")) {
             System.out.println("\nPerfeito, antes disso vamos precisar de algumas informações!\n");
 
@@ -49,6 +51,12 @@ public class Main {
 
             System.out.println("Digite seu bairro:");
             String bairro = input.nextLine();
+
+            System.out.println("Digite seu cidade:");
+            cidade = input.nextLine();
+
+            System.out.println("Digite seu CEP: ");
+            CEP = input.nextLine();
 
             System.out.println("Digite seu estado:");
             estado = input.nextLine();
@@ -81,6 +89,8 @@ public class Main {
         System.out.println("Rua: " + rua);
         System.out.println("Estado: " + estado);
         System.out.println("País: " + pais);
+        System.out.println("Cidade: " + cidade);
+        System.out.println("Cep: "+ CEP);
 
 
         do {
