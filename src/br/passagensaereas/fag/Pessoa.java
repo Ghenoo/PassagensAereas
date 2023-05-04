@@ -2,7 +2,11 @@ package br.passagensaereas.fag;
 
 public class Pessoa {
     private int cpf;
-    private String nome, email, telefone, dataNascimento;
+    private String nome, email, telefone;
+
+    public Pessoa(String nome, String email, String telefone, String rua, String bairro, String estado, String pais) {
+
+    }
 
     public int getCpf() {
         return cpf;
@@ -30,13 +34,4 @@ public class Pessoa {
     public void setTelefone(String telefone) {
         this.telefone = telefone;
     }
-
-    public String getDataNascimento() {
-        return dataNascimento;
-    }
-
-    public void setDataNascimento(String dataNascimento) {
-        this.dataNascimento = dataNascimento;
-    }
-
 }

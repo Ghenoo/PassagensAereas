@@ -16,7 +16,7 @@ public class Main {
         String respostas = input.nextLine();
 
         if (respostas.equalsIgnoreCase("P")){
-            System.out.println("Bem vindo passageiro!");
+            System.out.println("\nBem vindo passageiro!");
         } else{
             System.out.println("Bem vindo funcionário, tenha um Bom trabalho!");
             System.exit(0);
@@ -26,14 +26,34 @@ public class Main {
         String resposta = input.nextLine();
 
         if (resposta.equalsIgnoreCase("S")){
-            System.out.println("Perfeito, antes disso vamos precisar de algumas informações!\n");
+            System.out.println("\nPerfeito, antes disso vamos precisar de algumas informações!\n");
+
+            System.out.println("Digite seu nome:");
+            String nome = input.nextLine();
+
+            System.out.println("Digite seu email:");
+            String email = input.nextLine();
+
+            System.out.println("Digite seu telefone:");
+            String telefone = input.nextLine();
+
+            System.out.println("Digite sua rua:");
+            String rua = input.nextLine();
+
+            System.out.println("Digite seu bairro:");
+            String bairro = input.nextLine();
+
+            System.out.println("Digite seu estado:");
+            String estado = input.nextLine();
+
+            System.out.println("Digite seu país:");
+            String pais = input.nextLine();
+
+            Pessoa pessoa = new Pessoa(nome, email, telefone, rua, bairro, estado, pais);
         }
         else if (resposta.equalsIgnoreCase("N")){
-            System.out.print("Que pena, até breve...");
+            System.out.println("Que pena, até breve...");
             System.exit(0);
-        }
-        else {
-            System.out.println("Você é um funcionário?");
         }
 
         Scanner scanners = new Scanner(System.in);
@@ -50,6 +70,7 @@ public class Main {
         double preco = peso * taxaPorKg;
 
         System.out.printf("O peso da bagagem é %.2f kg e o preço é R$ %.2f", peso, preco);
+
         do {
             System.out.println("\n1- Exibir destinos");
             System.out.println("2- Planejar Viagem");
