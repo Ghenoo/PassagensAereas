@@ -8,9 +8,33 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
         int opc=0;
-        System.out.println("\n\nBem vindo a venda de passagens aéreas!\n");
-        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("\nBem vindo ao aeroporto Gheno's Companny!\n");
+        System.out.println("Deseja entrar como Passageiro ou Funcionário? (P/F)");
+        String respostas = input.nextLine();
+
+        if (respostas.equalsIgnoreCase("P")){
+            System.out.println("Bem vindo passageiro!");
+        } else{
+            System.out.println("Bem vindo funcionário, tenha um Bom trabalho!");
+            System.exit(0);
+        }
+
+        System.out.println("\n\nDeseja comprar passagens aéreas? (S/N)");
+        String resposta = input.nextLine();
+
+        if (resposta.equalsIgnoreCase("S")){
+            System.out.println("Perfeito, antes disso vamos precisar de algumas informações!\n");
+        }
+        else if (resposta.equalsIgnoreCase("N")){
+            System.out.print("Que pena, até breve...");
+            System.exit(0);
+        }
+        else {
+            System.out.println("Você é um funcionário?");
+        }
 
         Scanner scanners = new Scanner(System.in);
 
