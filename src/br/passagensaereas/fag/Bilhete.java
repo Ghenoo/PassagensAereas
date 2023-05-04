@@ -120,12 +120,12 @@ public class Bilhete {
         Scanner scan1 = new Scanner(System.in);
         int nome=0;
         System.out.println("Destinos disponíveis no momento");
-        destinos[0] = "1 - São Paulo";
-        destinos[1] = "2 - Fortaleza";
-        destinos[2] = "3 - Curitiba";
-        destinos[3] = "4 - Gramado";
-        destinos[4] = "5 - Salvador";
-        destinos[5] = "6 - Bahia\n\n";
+        System.out.println(destinos[0] = "1 - São Paulo");
+        System.out.println(destinos[1] = "2 - Fortaleza");
+        System.out.println(destinos[2] = "3 - Curitiba");
+        System.out.println(destinos[3] = "4 - Gramado");
+        System.out.println(destinos[4] = "5 - Salvador");
+        System.out.println(destinos[5] = "6 - Bahia\n\n");
 
         nome = scan1.nextInt();
         switch(nome){
@@ -338,24 +338,24 @@ public class Bilhete {
         switch (css) {
             case 1:
                 System.out.println("Classe selecionada: economica");
-                poltronas();
+                Assentos();
                 break;
             case 2:
                 System.out.println("Classe selecionada: executiva");
-                poltronas();
+                Assentos();
                 break;
             default:
                 System.out.println("Opção inválida!");
-                poltronas();
+                Assentos();
                 break;
         }
         sc5.close();
     }
 
-    public static void poltronas() {
+    public static void Assentos() {
         Scanner sc6 = new Scanner(System.in);
         int repp= 0;
-        System.out.println("\nPoltronas disponíveis: ");
+        System.out.println("\nAssentos disponíveis: ");
         System.out.println("\n1- [1]");
         System.out.println("2- [2]");
         System.out.println("3- [3]");
@@ -366,64 +366,37 @@ public class Bilhete {
         repp = sc6.nextInt();
         switch (repp) {
             case 1:
-                System.out.println("Poltrona selecionada: [1]");
+                System.out.println("Assento selecionada: [1]");
                 confirmar();
                 break;
             case 2:
-                System.out.println("Poltrona selecionada: [2]");
+                System.out.println("Assento selecionada: [2]");
                 confirmar();
                 break;
             case 3:
-                System.out.println("Poltrona selecionada: [3]");
+                System.out.println("Assento selecionada: [3]");
                 confirmar();
                 break;
             case 4:
-                System.out.println("Poltrona selecionada: [4]");
+                System.out.println("Assento selecionada: [4]");
                 confirmar();
                 break;
             case 5:
-                System.out.println("Poltrona selecionada: [5]");
+                System.out.println("Assento selecionada: [5]");
                 confirmar();
                 break;
             case 6:
-                System.out.println("Poltrona selecionada: [6]");
+                System.out.println("Assento selecionada: [6]");
                 confirmar();
                 break;
         }
     }
 
-    public class Bagagem {
-        private double peso;
-
-        public Bagagem() {
-        }
-
-        public void setPeso(double peso) {
-            this.peso = peso;
-        }
-
-        public double getPeso() {
-            return peso;
-        }
-
-        public void main(String[] args) {
-            Scanner scanner = new Scanner(System.in);
-
-            Bagagem bagagem = new Bagagem();
-
-            System.out.print("Insira o peso da bagagem: ");
-            double peso = scanner.nextDouble();
-
-            bagagem.setPeso(peso);
-
-            System.out.println("Peso da bagagem: " + bagagem.getPeso());
-        }
-    }
 
     public static void confirmar() {
         Scanner sc = new Scanner(System.in);
         int conf =0;
-        System.out.println("\nDiante de todas as opções escolhidas confirme se deseja realmente embarcar ");
+        System.out.println("\nDiante de todas as opções escolhidas confirme se deseja realmente embarcar? ");
         System.out.println("\n1- Sim");
         System.out.println("2- Não");
         System.out.print("Confirmação: ");
@@ -645,4 +618,7 @@ public class Bilhete {
         scan20.close();
 
     }
+
+
+
 }
