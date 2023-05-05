@@ -8,6 +8,9 @@ public class Pessoa {
 
     }
 
+    public Pessoa() {
+    }
+
     public int getCpf() {
         return cpf;
     }

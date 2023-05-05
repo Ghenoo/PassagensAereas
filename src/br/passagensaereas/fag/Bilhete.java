@@ -552,7 +552,6 @@ public class Bilhete {
     }
 
     public static void formaPagamentoSal(){
-
         Scanner scan20 = new Scanner(System.in);
         double valueSP = 850;
         double parcelas = 0;

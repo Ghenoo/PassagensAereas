@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Main {
 
 
-
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in);
         Scanner input = new Scanner(System.in);
@@ -81,6 +80,8 @@ public class Main {
         bagagem.setPeso(peso);
 
         double preco = peso * taxaPorKg;
+
+
 
         System.out.printf("O peso da bagagem é %.2f kg e o preço é R$ %.2f", peso, preco);
         System.out.println("\n\nNome: " + nome);
